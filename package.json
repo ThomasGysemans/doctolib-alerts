@@ -1,0 +1,21 @@
+{
+  "name": "doctolib-alerts",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "https://github.com/ThomasGysemans",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "buid": "tsc",
+    "dev": "tsc && node dist/index.js"
+  },
+  "dependencies": {
+    "node-html-parser": "^7.0.1",
+    "puppeteer": "^24.2.0",
+    "typescript": "^5.7.3"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.1"
+  }
+}
