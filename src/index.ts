@@ -93,6 +93,12 @@ Logger.announce("Scrapping Doctolib");
 
 console.time("Runtime");
 main()
-    .then((answer) => Logger.success(answer))
+    .then((answer) => {
+        if (Logger.verbose) {
+            Logger.success(answer);
+        } else {
+            console.log(answer);
+        }
+    })
     .catch((e) => Logger.err("Erreur !", e))
     .finally(() => console.timeEnd("Runtime"))
